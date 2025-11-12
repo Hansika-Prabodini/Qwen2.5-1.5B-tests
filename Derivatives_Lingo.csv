@@ -1,0 +1,501 @@
+alias,real_name,definition,category,db_table,db_column,db_type
+GS,Goldman Sachs,Institution shorthand,Banks/Institutions,trades,trade_id,bigint
+MS,Morgan Stanley,Institution shorthand,Banks/Institutions,portfolios,portfolio_id,bigint
+JPM,J.P. Morgan,Institution shorthand,Banks/Institutions,risk_metrics,metric_id,bigint
+C,Citigroup,Institution shorthand,Banks/Institutions,trades,term_code,text
+DB,Deutsche Bank,Institution shorthand,Banks/Institutions,portfolios,term_code,text
+UBS,UBS,Institution shorthand,Banks/Institutions,risk_metrics,term_code,text
+CS,Credit Suisse,Institution shorthand,Banks/Institutions,trades,counterparty_id,integer
+BAML,Bank of America Merrill Lynch,Institution shorthand,Banks/Institutions,portfolios,weight,numeric
+Wells,Wells Fargo,Institution shorthand,Banks/Institutions,risk_metrics,greek,text
+HSBC,HSBC,Institution shorthand,Banks/Institutions,trades,notional,numeric
+BNPP,BNP Paribas,Institution shorthand,Banks/Institutions,portfolios,rebalance_date,date
+SocGen,Société Générale,Institution shorthand,Banks/Institutions,risk_metrics,value_date,date
+Barc,Barclays,Institution shorthand,Banks/Institutions,trades,trade_ts,timestamp
+Nomura,Nomura,Institution shorthand,Banks/Institutions,portfolios,strategy_code,text
+MUFG,Mitsubishi UFJ Financial Group,Institution shorthand,Banks/Institutions,risk_metrics,metric_value,numeric
+RBC,Royal Bank of Canada,Institution shorthand,Banks/Institutions,trades,trade_id,bigint
+TD,Toronto-Dominion Bank,Institution shorthand,Banks/Institutions,portfolios,portfolio_id,bigint
+Macquarie,Macquarie,Institution shorthand,Banks/Institutions,risk_metrics,metric_id,bigint
+Lazard,Lazard,Institution shorthand,Banks/Institutions,trades,term_code,text
+Citi,Citigroup,Institution shorthand,Banks/Institutions,portfolios,term_code,text
+BOA,Bank of America,Institution shorthand,Banks/Institutions,risk_metrics,term_code,text
+SG,Société Générale,Institution shorthand,Banks/Institutions,trades,counterparty_id,integer
+Jeffs,Jefferies,Institution shorthand,Banks/Institutions,portfolios,weight,numeric
+Mizuho,Mizuhuo Bank,Institution shorthand,Banks/Institutions,risk_metrics,greek,text
+DBank,Deutsche Bank,Institution shorthand,Banks/Institutions,trades,notional,numeric
+Cable,GBP/USD,Nickname for an FX pair,FX Pairs/FX Slang,portfolios,rebalance_date,date
+Fiber,EUR/USD,Nickname for an FX pair,FX Pairs/FX Slang,risk_metrics,value_date,date
+Loonie,USD/CAD,Nickname for an FX pair,FX Pairs/FX Slang,trades,trade_ts,timestamp
+Aussie,AUD/USD,Nickname for an FX pair,FX Pairs/FX Slang,portfolios,strategy_code,text
+Kiwi,NZD/USD,Nickname for an FX pair,FX Pairs/FX Slang,risk_metrics,metric_value,numeric
+Swissy,USD/CHF,Nickname for an FX pair,FX Pairs/FX Slang,trades,trade_id,bigint
+Ninja,USD/JPY,Nickname for an FX pair,FX Pairs/FX Slang,portfolios,portfolio_id,bigint
+Guppy,GBP/JPY,Nickname for an FX pair,FX Pairs/FX Slang,risk_metrics,metric_id,bigint
+Euro-Sterling,EUR/GBP,Nickname for an FX pair,FX Pairs/FX Slang,trades,term_code,text
+Chunnel,EUR/GBP,Nickname for an FX pair,FX Pairs/FX Slang,portfolios,term_code,text
+Dollar-Yen,USD/JPY,Nickname for an FX pair,FX Pairs/FX Slang,risk_metrics,term_code,text
+Euro-Yen,EUR/JPY,Nickname for an FX pair,FX Pairs/FX Slang,trades,counterparty_id,integer
+Dragon,GBP/JPY,Nickname for an FX pair,FX Pairs/FX Slang,portfolios,weight,numeric
+Euro-Loonie,EUR/CAD,Nickname for an FX pair,FX Pairs/FX Slang,risk_metrics,greek,text
+Aussie-Yen,AUD/JPY,Nickname for an FX pair,FX Pairs/FX Slang,trades,notional,numeric
+Kiwi-Yen,NZD/JPY,Nickname for an FX pair,FX Pairs/FX Slang,portfolios,rebalance_date,date
+Euro-Swiss,EUR/CHF,Nickname for an FX pair,FX Pairs/FX Slang,risk_metrics,value_date,date
+Pound-Swiss,GBP/CHF,Nickname for an FX pair,FX Pairs/FX Slang,trades,trade_ts,timestamp
+Cable-Yen,GBP/JPY,Nickname for an FX pair,FX Pairs/FX Slang,portfolios,strategy_code,text
+Cross,Non-USD cross pair,Nickname for an FX pair,FX Pairs/FX Slang,risk_metrics,metric_value,numeric
+Gamma,Option gamma,Options/volatility concept or strategy,Options & Vol,trades,trade_id,bigint
+Vega,Option vega,Options/volatility concept or strategy,Options & Vol,portfolios,portfolio_id,bigint
+Theta,Time decay (theta),Options/volatility concept or strategy,Options & Vol,risk_metrics,metric_id,bigint
+Delta,Option delta,Options/volatility concept or strategy,Options & Vol,trades,term_code,text
+Rho,Option rho,Options/volatility concept or strategy,Options & Vol,portfolios,term_code,text
+Skew,Implied volatility skew,Options/volatility concept or strategy,Options & Vol,risk_metrics,term_code,text
+Smile,Volatility smile,Options/volatility concept or strategy,Options & Vol,trades,counterparty_id,integer
+Implied vol,Implied volatility,Options/volatility concept or strategy,Options & Vol,portfolios,weight,numeric
+Realized vol,Realized volatility,Options/volatility concept or strategy,Options & Vol,risk_metrics,greek,text
+Long gamma,Long gamma position,Options/volatility concept or strategy,Options & Vol,trades,notional,numeric
+Short gamma,Short gamma position,Options/volatility concept or strategy,Options & Vol,portfolios,rebalance_date,date
+Covered call,Covered call,Options/volatility concept or strategy,Options & Vol,risk_metrics,value_date,date
+Straddle,Long straddle,Options/volatility concept or strategy,Options & Vol,trades,trade_ts,timestamp
+Strangle,Long strangle,Options/volatility concept or strategy,Options & Vol,portfolios,strategy_code,text
+Iron condor,Iron condor spread,Options/volatility concept or strategy,Options & Vol,risk_metrics,metric_value,numeric
+Butterfly,Butterfly spread,Options/volatility concept or strategy,Options & Vol,trades,trade_id,bigint
+Collar,Protective collar,Options/volatility concept or strategy,Options & Vol,portfolios,portfolio_id,bigint
+Calendar spread,Calendar spread,Options/volatility concept or strategy,Options & Vol,risk_metrics,metric_id,bigint
+Diagonal spread,Diagonal spread,Options/volatility concept or strategy,Options & Vol,trades,term_code,text
+Synthetic long,Synthetic long,Options/volatility concept or strategy,Options & Vol,portfolios,term_code,text
+Synthetic short,Synthetic short,Options/volatility concept or strategy,Options & Vol,risk_metrics,term_code,text
+Risk reversal,Risk reversal,Options/volatility concept or strategy,Options & Vol,trades,counterparty_id,integer
+Fence,Option fence,Options/volatility concept or strategy,Options & Vol,portfolios,weight,numeric
+Vol surface,Volatility surface,Options/volatility concept or strategy,Options & Vol,risk_metrics,greek,text
+Sticky delta,Sticky delta assumption,Options/volatility concept or strategy,Options & Vol,trades,notional,numeric
+Sticky strike,Sticky strike assumption,Options/volatility concept or strategy,Options & Vol,portfolios,rebalance_date,date
+Skewness trade,Skew trade,Options/volatility concept or strategy,Options & Vol,risk_metrics,value_date,date
+Vol crush,Volatility crush,Options/volatility concept or strategy,Options & Vol,trades,trade_ts,timestamp
+Vol pop,Volatility pop,Options/volatility concept or strategy,Options & Vol,portfolios,strategy_code,text
+Vega bleed,Vega bleed,Options/volatility concept or strategy,Options & Vol,risk_metrics,metric_value,numeric
+Delta hedge,Delta hedging,Options/volatility concept or strategy,Options & Vol,trades,trade_id,bigint
+Roll,Roll position,Options/volatility concept or strategy,Options & Vol,portfolios,portfolio_id,bigint
+Expiry,Expiration,Options/volatility concept or strategy,Options & Vol,risk_metrics,metric_id,bigint
+Exercise,Exercise (option),Options/volatility concept or strategy,Options & Vol,trades,term_code,text
+Assignment,Assignment (option),Options/volatility concept or strategy,Options & Vol,portfolios,term_code,text
+Pin risk,Pin risk,Options/volatility concept or strategy,Options & Vol,risk_metrics,term_code,text
+Jump risk,Jump risk,Options/volatility concept or strategy,Options & Vol,trades,counterparty_id,integer
+Tail hedge,Tail risk hedge,Options/volatility concept or strategy,Options & Vol,portfolios,weight,numeric
+Risk-off,Risk-off regime,Options/volatility concept or strategy,Options & Vol,risk_metrics,greek,text
+Risk-on,Risk-on regime,Options/volatility concept or strategy,Options & Vol,trades,notional,numeric
+Struct,Structured product,Options/volatility concept or strategy,Options & Vol,portfolios,rebalance_date,date
+Exotic,Exotic option,Options/volatility concept or strategy,Options & Vol,risk_metrics,value_date,date
+Barrier,Barrier option,Options/volatility concept or strategy,Options & Vol,trades,trade_ts,timestamp
+Knock-in,Knock-in option,Options/volatility concept or strategy,Options & Vol,portfolios,strategy_code,text
+Knock-out,Knock-out option,Options/volatility concept or strategy,Options & Vol,risk_metrics,metric_value,numeric
+Digitals,Digital option,Options/volatility concept or strategy,Options & Vol,trades,trade_id,bigint
+Quanto,Quanto option,Options/volatility concept or strategy,Options & Vol,portfolios,portfolio_id,bigint
+Cliquet,Cliquet option,Options/volatility concept or strategy,Options & Vol,risk_metrics,metric_id,bigint
+Autocallable,Autocallable note,Options/volatility concept or strategy,Options & Vol,trades,term_code,text
+Lookback,Lookback option,Options/volatility concept or strategy,Options & Vol,portfolios,term_code,text
+Asian option,Asian option,Options/volatility concept or strategy,Options & Vol,risk_metrics,term_code,text
+Swaption,Swaption,Options/volatility concept or strategy,Options & Vol,trades,counterparty_id,integer
+CMS,Constant Maturity Swap,Options/volatility concept or strategy,Options & Vol,portfolios,weight,numeric
+FRA,Forward Rate Agreement,Options/volatility concept or strategy,Options & Vol,risk_metrics,greek,text
+CDS,Credit Default Swap,Options/volatility concept or strategy,Options & Vol,trades,notional,numeric
+Axe,Position axe,Trader desk slang,Trading Slang,portfolios,rebalance_date,date
+Hit the bid,Hit the bid,Trader desk slang,Trading Slang,risk_metrics,value_date,date
+Lift the offer,Lift the offer,Trader desk slang,Trading Slang,trades,trade_ts,timestamp
+Spoof,Spoof,Trader desk slang,Trading Slang,portfolios,strategy_code,text
+Whack,Whack,Trader desk slang,Trading Slang,risk_metrics,metric_value,numeric
+Scoop,Scoop,Trader desk slang,Trading Slang,trades,trade_id,bigint
+Fill,Fill,Trader desk slang,Trading Slang,portfolios,portfolio_id,bigint
+Partial fill,Partial fill,Trader desk slang,Trading Slang,risk_metrics,metric_id,bigint
+Leg,Leg,Trader desk slang,Trading Slang,trades,term_code,text
+Arb,Arbitrage,Trader desk slang,Trading Slang,portfolios,term_code,text
+Box,Box trade,Trader desk slang,Trading Slang,risk_metrics,term_code,text
+Roll down,Rolldown,Trader desk slang,Trading Slang,trades,counterparty_id,integer
+Fade,Fade,Trader desk slang,Trading Slang,portfolios,weight,numeric
+Chase,Chase,Trader desk slang,Trading Slang,risk_metrics,greek,text
+Stop-out,Stop-out,Trader desk slang,Trading Slang,trades,notional,numeric
+Blow-up,Blow-up,Trader desk slang,Trading Slang,portfolios,rebalance_date,date
+Margin call,Margin call,Trader desk slang,Trading Slang,risk_metrics,value_date,date
+Clip size,Clip size,Trader desk slang,Trading Slang,trades,trade_ts,timestamp
+Ticket,Ticket,Trader desk slang,Trading Slang,portfolios,strategy_code,text
+Flow,Flow,Trader desk slang,Trading Slang,risk_metrics,metric_value,numeric
+Print,Print,Trader desk slang,Trading Slang,trades,trade_id,bigint
+Line,Line,Trader desk slang,Trading Slang,portfolios,portfolio_id,bigint
+Bucket shop,Bucket shop,Trader desk slang,Trading Slang,risk_metrics,metric_id,bigint
+Book,Book,Trader desk slang,Trading Slang,trades,term_code,text
+Flat,Flat,Trader desk slang,Trading Slang,portfolios,term_code,text
+Long,Long,Trader desk slang,Trading Slang,risk_metrics,term_code,text
+Short,Short,Trader desk slang,Trading Slang,trades,counterparty_id,integer
+Square up,Square up,Trader desk slang,Trading Slang,portfolios,weight,numeric
+Off the run,Off the run,Trader desk slang,Trading Slang,risk_metrics,greek,text
+On the run,On the run,Trader desk slang,Trading Slang,trades,notional,numeric
+Fade the move,Fade the move,Trader desk slang,Trading Slang,portfolios,rebalance_date,date
+Dead cat bounce,Dead cat bounce,Trader desk slang,Trading Slang,risk_metrics,value_date,date
+Knife catch,Knife catch,Trader desk slang,Trading Slang,trades,trade_ts,timestamp
+Rip,Rip,Trader desk slang,Trading Slang,portfolios,strategy_code,text
+Dump,Dump,Trader desk slang,Trading Slang,risk_metrics,metric_value,numeric
+Chop,Chop,Trader desk slang,Trading Slang,trades,trade_id,bigint
+Tape,Tape,Trader desk slang,Trading Slang,portfolios,portfolio_id,bigint
+Crossed market,Crossed market,Trader desk slang,Trading Slang,risk_metrics,metric_id,bigint
+Stale price,Stale price,Trader desk slang,Trading Slang,trades,term_code,text
+Back office,Back office,Trader desk slang,Trading Slang,portfolios,term_code,text
+Front office,Front office,Trader desk slang,Trading Slang,risk_metrics,term_code,text
+Middle office,Middle office,Trader desk slang,Trading Slang,trades,counterparty_id,integer
+MOC,Market-on-Close,Trader desk slang,Trading Slang,portfolios,weight,numeric
+LOC,Limit-on-Close,Trader desk slang,Trading Slang,risk_metrics,greek,text
+IOI,Indication of Interest,Trader desk slang,Trading Slang,trades,notional,numeric
+OTC,Over-the-counter,Trader desk slang,Trading Slang,portfolios,rebalance_date,date
+Exchange-traded,Exchange-traded,Trader desk slang,Trading Slang,risk_metrics,value_date,date
+Clearing,Clearing (settlement),Trader desk slang,Trading Slang,trades,trade_ts,timestamp
+Collateral,Collateral (margin),Trader desk slang,Trading Slang,portfolios,strategy_code,text
+Netting,Netting (offset),Trader desk slang,Trading Slang,risk_metrics,metric_value,numeric
+DV01,Dollar value of 01,Rates or macro derivative concept,Rates/Macro,trades,trade_id,bigint
+Duration,Duration,Rates or macro derivative concept,Rates/Macro,portfolios,portfolio_id,bigint
+Convexity,Convexity,Rates or macro derivative concept,Rates/Macro,risk_metrics,metric_id,bigint
+Curve steepener,Curve steepener,Rates or macro derivative concept,Rates/Macro,trades,term_code,text
+Curve flattener,Curve flattener,Rates or macro derivative concept,Rates/Macro,portfolios,term_code,text
+Breakeven,Breakeven inflation,Rates or macro derivative concept,Rates/Macro,risk_metrics,term_code,text
+Basis,Basis (spread),Rates or macro derivative concept,Rates/Macro,trades,counterparty_id,integer
+Carry trade,Carry trade,Rates or macro derivative concept,Rates/Macro,portfolios,weight,numeric
+Repo,Repurchase agreement,Rates or macro derivative concept,Rates/Macro,risk_metrics,greek,text
+Reverse repo,Reverse repurchase agreement,Rates or macro derivative concept,Rates/Macro,trades,notional,numeric
+OIS,Overnight Index Swap,Rates or macro derivative concept,Rates/Macro,portfolios,rebalance_date,date
+SOFR,Secured Overnight Financing Rate,Rates or macro derivative concept,Rates/Macro,risk_metrics,value_date,date
+LIBOR,London Interbank Offered Rate,Rates or macro derivative concept,Rates/Macro,trades,trade_ts,timestamp
+EONIA,Euro Overnight Index Average,Rates or macro derivative concept,Rates/Macro,portfolios,strategy_code,text
+Euribor,Euro Interbank Offered Rate,Rates or macro derivative concept,Rates/Macro,risk_metrics,metric_value,numeric
+GC,General collateral,Rates or macro derivative concept,Rates/Macro,trades,trade_id,bigint
+HICP,Harmonised Index of Consumer Prices,Rates or macro derivative concept,Rates/Macro,portfolios,portfolio_id,bigint
+CPI,Consumer Price Index,Rates or macro derivative concept,Rates/Macro,risk_metrics,metric_id,bigint
+GDP print,GDP release,Rates or macro derivative concept,Rates/Macro,trades,term_code,text
+NFP,Nonfarm Payrolls,Rates or macro derivative concept,Rates/Macro,portfolios,term_code,text
+Dot plot,FOMC dot plot,Rates or macro derivative concept,Rates/Macro,risk_metrics,term_code,text
+FOMC,Federal Open Market Committee,Rates or macro derivative concept,Rates/Macro,trades,counterparty_id,integer
+QE,Quantitative easing,Rates or macro derivative concept,Rates/Macro,portfolios,weight,numeric
+QT,Quantitative tightening,Rates or macro derivative concept,Rates/Macro,risk_metrics,greek,text
+Basis trade,Basis trade,Rates or macro derivative concept,Rates/Macro,trades,notional,numeric
+Swap spread,Swap spread,Rates or macro derivative concept,Rates/Macro,portfolios,rebalance_date,date
+TED spread,TED spread,Rates or macro derivative concept,Rates/Macro,risk_metrics,value_date,date
+FRA/OIS spread,FRA/OIS spread,Rates or macro derivative concept,Rates/Macro,trades,trade_ts,timestamp
+Forward curve,Forward curve,Rates or macro derivative concept,Rates/Macro,portfolios,strategy_code,text
+Roll-down trade,Roll-down trade,Rates or macro derivative concept,Rates/Macro,risk_metrics,metric_value,numeric
+Risk book,Risk book,Portfolio/risk concept,Positioning & Risk,trades,trade_id,bigint
+Overweight,Overweight,Portfolio/risk concept,Positioning & Risk,portfolios,portfolio_id,bigint
+Underweight,Underweight,Portfolio/risk concept,Positioning & Risk,risk_metrics,metric_id,bigint
+Neutral,Neutral,Portfolio/risk concept,Positioning & Risk,trades,term_code,text
+Hedge,Hedge,Portfolio/risk concept,Positioning & Risk,portfolios,term_code,text
+Overlay,Overlay,Portfolio/risk concept,Positioning & Risk,risk_metrics,term_code,text
+Gross exposure,Gross exposure,Portfolio/risk concept,Positioning & Risk,trades,counterparty_id,integer
+Net exposure,Net exposure,Portfolio/risk concept,Positioning & Risk,portfolios,weight,numeric
+Leverage,Leverage,Portfolio/risk concept,Positioning & Risk,risk_metrics,greek,text
+VaR,Value at Risk,Portfolio/risk concept,Positioning & Risk,trades,notional,numeric
+PnL,Profit and Loss,Portfolio/risk concept,Positioning & Risk,portfolios,rebalance_date,date
+Sharpe,Sharpe,Portfolio/risk concept,Positioning & Risk,risk_metrics,value_date,date
+Drawdown,Drawdown,Portfolio/risk concept,Positioning & Risk,trades,trade_ts,timestamp
+Mark-to-market,Mark-to-market,Portfolio/risk concept,Positioning & Risk,portfolios,strategy_code,text
+Stop loss,Stop loss,Portfolio/risk concept,Positioning & Risk,risk_metrics,metric_value,numeric
+Take profit,Take profit,Portfolio/risk concept,Positioning & Risk,trades,trade_id,bigint
+Breakeven level,Breakeven level,Portfolio/risk concept,Positioning & Risk,portfolios,portfolio_id,bigint
+Positioning data,Positioning data,Portfolio/risk concept,Positioning & Risk,risk_metrics,metric_id,bigint
+CTA flows,CTA flows,Portfolio/risk concept,Positioning & Risk,trades,term_code,text
+Fast money,Fast money,Portfolio/risk concept,Positioning & Risk,portfolios,term_code,text
+Algo,Algo,Execution or microstructure term,Execution/Market Micro,risk_metrics,term_code,text
+HFT,HFT,Execution or microstructure term,Execution/Market Micro,trades,counterparty_id,integer
+Dark pool,Dark pool,Execution or microstructure term,Execution/Market Micro,portfolios,weight,numeric
+Lit market,Lit market,Execution or microstructure term,Execution/Market Micro,risk_metrics,greek,text
+RFQ,RFQ,Execution or microstructure term,Execution/Market Micro,trades,notional,numeric
+Hit ratio,Hit ratio,Execution or microstructure term,Execution/Market Micro,portfolios,rebalance_date,date
+Slippage,Slippage,Execution or microstructure term,Execution/Market Micro,risk_metrics,value_date,date
+Latency,Latency,Execution or microstructure term,Execution/Market Micro,trades,trade_ts,timestamp
+VWAP,Volume-Weighted Average Price,Execution or microstructure term,Execution/Market Micro,portfolios,strategy_code,text
+TWAP,Time-Weighted Average Price,Execution or microstructure term,Execution/Market Micro,risk_metrics,metric_value,numeric
+Iceberg order,Iceberg order,Execution or microstructure term,Execution/Market Micro,trades,trade_id,bigint
+Flash crash,Flash crash,Execution or microstructure term,Execution/Market Micro,portfolios,portfolio_id,bigint
+Spoofing,Spoofing,Execution or microstructure term,Execution/Market Micro,risk_metrics,metric_id,bigint
+Quote stuffing,Quote stuffing,Execution or microstructure term,Execution/Market Micro,trades,term_code,text
+Fat finger,Fat finger,Execution or microstructure term,Execution/Market Micro,portfolios,term_code,text
+Limit order,Limit order,Execution or microstructure term,Execution/Market Micro,risk_metrics,term_code,text
+Market order,Market order,Execution or microstructure term,Execution/Market Micro,trades,counterparty_id,integer
+Stop order,Stop order,Execution or microstructure term,Execution/Market Micro,portfolios,weight,numeric
+Stop-limit,Stop-limit,Execution or microstructure term,Execution/Market Micro,risk_metrics,greek,text
+Fill or kill,Fill or kill,Execution or microstructure term,Execution/Market Micro,trades,notional,numeric
+IOC,Immediate or Cancel,Execution or microstructure term,Execution/Market Micro,portfolios,rebalance_date,date
+GTC,Good Till Cancelled,Execution or microstructure term,Execution/Market Micro,risk_metrics,value_date,date
+GTD,Good Till Date,Execution or microstructure term,Execution/Market Micro,trades,trade_ts,timestamp
+Sweep,Sweep,Execution or microstructure term,Execution/Market Micro,portfolios,strategy_code,text
+Broker,Broker,Execution or microstructure term,Execution/Market Micro,risk_metrics,metric_value,numeric
+Prop shop,Prop shop,Execution or microstructure term,Execution/Market Micro,trades,trade_id,bigint
+LP,LP,Execution or microstructure term,Execution/Market Micro,portfolios,portfolio_id,bigint
+MM,MM,Execution or microstructure term,Execution/Market Micro,risk_metrics,metric_id,bigint
+Spread,Spread,Execution or microstructure term,Execution/Market Micro,trades,term_code,text
+Depth,Depth,Execution or microstructure term,Execution/Market Micro,portfolios,term_code,text
+Squawk box,Squawk box,General trading desk jargon,Misc/Desk,risk_metrics,term_code,text
+Tape bomb,Tape bomb,General trading desk jargon,Misc/Desk,trades,counterparty_id,integer
+Macro tourists,Macro tourists,General trading desk jargon,Misc/Desk,portfolios,weight,numeric
+Flow monster,Flow monster,General trading desk jargon,Misc/Desk,risk_metrics,greek,text
+Whale,Whale,General trading desk jargon,Misc/Desk,trades,notional,numeric
+Retail herd,Retail herd,General trading desk jargon,Misc/Desk,portfolios,rebalance_date,date
+Fast market,Fast market,General trading desk jargon,Misc/Desk,risk_metrics,value_date,date
+Thin market,Thin market,General trading desk jargon,Misc/Desk,trades,trade_ts,timestamp
+Cross-currents,Cross-currents,General trading desk jargon,Misc/Desk,portfolios,strategy_code,text
+Fade the noise,Fade the noise,General trading desk jargon,Misc/Desk,risk_metrics,metric_value,numeric
+Smack it,Smack it,General trading desk jargon,Misc/Desk,trades,trade_id,bigint
+Hit it,Hit it,General trading desk jargon,Misc/Desk,portfolios,portfolio_id,bigint
+Melt-up,Melt-up,General trading desk jargon,Misc/Desk,risk_metrics,metric_id,bigint
+Flush,Flush,General trading desk jargon,Misc/Desk,trades,term_code,text
+Risk desk,Risk desk,General trading desk jargon,Misc/Desk,portfolios,term_code,text
+Sell-side,Sell-side,General trading desk jargon,Misc/Desk,risk_metrics,term_code,text
+Buy-side,Buy-side,General trading desk jargon,Misc/Desk,trades,counterparty_id,integer
+Prop desk,Prop desk,General trading desk jargon,Misc/Desk,portfolios,weight,numeric
+Prime broker,Prime brokerage,General trading desk jargon,Misc/Desk,risk_metrics,greek,text
+Backstop,Backstop,General trading desk jargon,Misc/Desk,trades,notional,numeric
+Tracking error,Tracking error,Performance/risk metric,Portfolio Metrics,portfolios,rebalance_date,date
+Information ratio,Information ratio,Performance/risk metric,Portfolio Metrics,risk_metrics,value_date,date
+Active share,Active share,Risk/management concept,Risk/Other,trades,trade_ts,timestamp
+Risk parity,Risk parity,Portfolio construction concept or control,Portfolio Construction,portfolios,strategy_code,text
+Core-satellite,Core-satellite,Risk/management concept,Risk/Other,risk_metrics,metric_value,numeric
+Factor tilt,Factor tilt,Portfolio construction concept or control,Portfolio Construction,trades,trade_id,bigint
+Value tilt,Value tilt,Portfolio construction concept or control,Portfolio Construction,portfolios,portfolio_id,bigint
+Momentum tilt,Momentum tilt,Portfolio construction concept or control,Portfolio Construction,risk_metrics,metric_id,bigint
+Quality tilt,Quality tilt,Portfolio construction concept or control,Portfolio Construction,trades,term_code,text
+Low-vol tilt,Low-vol tilt,Portfolio construction concept or control,Portfolio Construction,portfolios,term_code,text
+Minimum variance,Minimum variance,Risk/management concept,Risk/Other,risk_metrics,term_code,text
+Equal weight,Equal weight,Risk/management concept,Risk/Other,trades,counterparty_id,integer
+Black-Litterman,Black-Litterman,Risk/management concept,Risk/Other,portfolios,weight,numeric
+Risk budgeting,Risk budgeting,Portfolio construction concept or control,Portfolio Construction,risk_metrics,greek,text
+Risk overlay,Risk overlay,Portfolio construction concept or control,Portfolio Construction,trades,notional,numeric
+Currency overlay,Currency overlay,Portfolio construction concept or control,Portfolio Construction,portfolios,rebalance_date,date
+Rebalance band,Rebalance band,Portfolio construction concept or control,Portfolio Construction,risk_metrics,value_date,date
+Turnover constraint,Turnover constraint,Portfolio construction concept or control,Portfolio Construction,trades,trade_ts,timestamp
+Capacity constraint,Capacity constraint,Portfolio construction concept or control,Portfolio Construction,portfolios,strategy_code,text
+Liquidity bucket,Liquidity bucket,Risk/management concept,Risk/Other,risk_metrics,metric_value,numeric
+Sleeve,Sleeve,Portfolio construction concept or control,Portfolio Construction,trades,trade_id,bigint
+Smart beta,Smart beta,Performance/risk metric,Portfolio Metrics,portfolios,portfolio_id,bigint
+Custom benchmark,Custom benchmark,Performance/risk metric,Portfolio Metrics,risk_metrics,metric_id,bigint
+Portable alpha,Portable alpha,Portfolio construction concept or control,Portfolio Construction,trades,term_code,text
+ALM,Asset-liability management,Portfolio construction concept or control,Portfolio Construction,portfolios,term_code,text
+Immunization,Immunization,Risk/management concept,Risk/Other,risk_metrics,term_code,text
+Duration matching,Duration matching,Performance/risk metric,Portfolio Metrics,trades,counterparty_id,integer
+Cashflow matching,Cashflow matching,Risk/management concept,Risk/Other,portfolios,weight,numeric
+Glide path,Glide path,Portfolio construction concept or control,Portfolio Construction,risk_metrics,greek,text
+Target-date,Target-date,Portfolio construction concept or control,Portfolio Construction,trades,notional,numeric
+Tactical asset allocation,Tactical asset allocation,Portfolio construction concept or control,Portfolio Construction,portfolios,rebalance_date,date
+Strategic asset allocation,Strategic asset allocation,Portfolio construction concept or control,Portfolio Construction,risk_metrics,value_date,date
+Dynamic beta,Dynamic beta,Risk/management concept,Risk/Other,trades,trade_ts,timestamp
+Vol targeting,Vol targeting,Portfolio construction concept or control,Portfolio Construction,portfolios,strategy_code,text
+Tail allocation,Tail allocation,Portfolio construction concept or control,Portfolio Construction,risk_metrics,metric_value,numeric
+Crisis alpha,Crisis alpha,Portfolio construction concept or control,Portfolio Construction,trades,trade_id,bigint
+Min drawdown,Min drawdown,Risk/management concept,Risk/Other,portfolios,portfolio_id,bigint
+Max Sharpe,Max Sharpe,Performance/risk metric,Portfolio Metrics,risk_metrics,metric_id,bigint
+Max diversification,Max diversification,Risk/management concept,Risk/Other,trades,term_code,text
+Hierarchical risk parity,Hierarchical risk parity,Portfolio construction concept or control,Portfolio Construction,portfolios,term_code,text
+ERC,Equal risk contribution,Risk/management concept,Risk/Other,risk_metrics,term_code,text
+Kelly sizing,Kelly sizing,Risk/management concept,Risk/Other,trades,counterparty_id,integer
+Half-Kelly,Half-Kelly,Risk/management concept,Risk/Other,portfolios,weight,numeric
+Stop grid,Stop grid,Risk/management concept,Risk/Other,risk_metrics,greek,text
+Position cap,Position cap,Risk/management concept,Risk/Other,trades,notional,numeric
+Name cap,Name cap,Risk/management concept,Risk/Other,portfolios,rebalance_date,date
+Sector cap,Sector cap,Risk/management concept,Risk/Other,risk_metrics,value_date,date
+Tracking band,Tracking band,Portfolio construction concept or control,Portfolio Construction,trades,trade_ts,timestamp
+TE budget,Tracking error budget,Portfolio construction concept or control,Portfolio Construction,portfolios,strategy_code,text
+Risk waterfall,Risk waterfall,Risk/management concept,Risk/Other,risk_metrics,metric_value,numeric
+Attribution effect,Attribution effect,Risk/management concept,Risk/Other,trades,trade_id,bigint
+Selection effect,Selection effect,Risk/management concept,Risk/Other,portfolios,portfolio_id,bigint
+Allocation effect,Allocation effect,Portfolio construction concept or control,Portfolio Construction,risk_metrics,metric_id,bigint
+Interaction effect,Interaction effect,Risk/management concept,Risk/Other,trades,term_code,text
+Factor exposure,Factor exposure,Risk/management concept,Risk/Other,portfolios,term_code,text
+Factor timing,Factor timing,Risk/management concept,Risk/Other,risk_metrics,term_code,text
+Factor crowding,Factor crowding,Risk/management concept,Risk/Other,trades,counterparty_id,integer
+Style drift,Style drift,Risk/management concept,Risk/Other,portfolios,weight,numeric
+Constraint shadow price,Constraint shadow price,Portfolio construction concept or control,Portfolio Construction,risk_metrics,greek,text
+Resampled frontier,Resampled frontier,Portfolio construction concept or control,Portfolio Construction,trades,notional,numeric
+Robust frontier,Robust frontier,Portfolio construction concept or control,Portfolio Construction,portfolios,rebalance_date,date
+Bayesian shrinkage,Bayesian shrinkage,Risk/management concept,Risk/Other,risk_metrics,value_date,date
+Resampling,Resampling,Risk/management concept,Risk/Other,trades,trade_ts,timestamp
+Blending,Blending,Risk/management concept,Risk/Other,portfolios,strategy_code,text
+Overlay mandate,Overlay mandate,Portfolio construction concept or control,Portfolio Construction,risk_metrics,metric_value,numeric
+Sleeve mandate,Sleeve mandate,Portfolio construction concept or control,Portfolio Construction,trades,trade_id,bigint
+Portable beta,Portable beta,Risk/management concept,Risk/Other,portfolios,portfolio_id,bigint
+Hedged share class,Hedged share class,Risk/management concept,Risk/Other,risk_metrics,metric_id,bigint
+Benchmark aware,Benchmark aware,Performance/risk metric,Portfolio Metrics,trades,term_code,text
+Benchmark agnostic,Benchmark agnostic,Performance/risk metric,Portfolio Metrics,portfolios,term_code,text
+Min variance,Min variance,Risk/management concept,Risk/Other,risk_metrics,term_code,text
+Inverse-vol weight,Inverse-vol weight,Advanced options/vol concept,Options & Vol,trades,counterparty_id,integer
+Beta-neutral,Beta-neutral,Portfolio construction concept or control,Portfolio Construction,portfolios,weight,numeric
+Dollar-neutral,Dollar-neutral,Portfolio construction concept or control,Portfolio Construction,risk_metrics,greek,text
+Market-neutral,Market-neutral,Performance/risk metric,Portfolio Metrics,trades,notional,numeric
+Pairs trade,Pairs trade,Execution microstructure term,Execution/Market Micro,portfolios,rebalance_date,date
+Stat arb,Stat arb,Risk/management concept,Risk/Other,risk_metrics,value_date,date
+Cointegration,Cointegration,Performance/risk metric,Portfolio Metrics,trades,trade_ts,timestamp
+Cluster risk,Cluster risk,Risk/management concept,Risk/Other,portfolios,strategy_code,text
+Common factor,Common factor,Risk/management concept,Risk/Other,risk_metrics,metric_value,numeric
+Idiosyncratic risk,Idiosyncratic risk,Risk/management concept,Risk/Other,trades,trade_id,bigint
+Specific risk,Specific risk,Risk/management concept,Risk/Other,portfolios,portfolio_id,bigint
+Tracking error vol,Tracking error vol,Performance/risk metric,Portfolio Metrics,risk_metrics,metric_id,bigint
+Active risk,Active risk,Risk/management concept,Risk/Other,trades,term_code,text
+Active return,Active return,Risk/management concept,Risk/Other,portfolios,term_code,text
+Policy portfolio,Policy portfolio,Portfolio construction concept or control,Portfolio Construction,risk_metrics,term_code,text
+Reference portfolio,Reference portfolio,Portfolio construction concept or control,Portfolio Construction,trades,counterparty_id,integer
+Capital allocation line,Capital allocation line,Portfolio construction concept or control,Portfolio Construction,portfolios,weight,numeric
+Security market line,Security market line,Performance/risk metric,Portfolio Metrics,risk_metrics,greek,text
+Efficient frontier,Efficient frontier,Portfolio construction concept or control,Portfolio Construction,trades,notional,numeric
+Opportunity set,Opportunity set,Risk/management concept,Risk/Other,portfolios,rebalance_date,date
+Budget constraint,Budget constraint,Portfolio construction concept or control,Portfolio Construction,risk_metrics,value_date,date
+Lagrange multiplier,Lagrange multiplier,Risk/management concept,Risk/Other,trades,trade_ts,timestamp
+Karush-Kuhn-Tucker,Karush-Kuhn-Tucker,Risk/management concept,Risk/Other,portfolios,strategy_code,text
+Corner solution,Corner solution,Risk/management concept,Risk/Other,risk_metrics,metric_value,numeric
+Binding constraint,Binding constraint,Portfolio construction concept or control,Portfolio Construction,trades,trade_id,bigint
+Shadow NAV,Shadow NAV,Risk/management concept,Risk/Other,portfolios,portfolio_id,bigint
+Liquidity sleeve,Liquidity sleeve,Portfolio construction concept or control,Portfolio Construction,risk_metrics,metric_id,bigint
+Bridge portfolio,Bridge portfolio,Portfolio construction concept or control,Portfolio Construction,trades,term_code,text
+Transition management,Transition management,Portfolio construction concept or control,Portfolio Construction,portfolios,term_code,text
+In-kind transfer,In-kind transfer,Risk/management concept,Risk/Other,risk_metrics,term_code,text
+Cross trade,Cross trade,Execution microstructure term,Execution/Market Micro,trades,counterparty_id,integer
+Block trade,Block trade,Execution microstructure term,Execution/Market Micro,portfolios,weight,numeric
+Optimization run,Optimization run,Risk/management concept,Risk/Other,risk_metrics,greek,text
+Rebalance run,Rebalance run,Portfolio construction concept or control,Portfolio Construction,trades,notional,numeric
+Look-through,Look-through,Risk/management concept,Risk/Other,portfolios,rebalance_date,date
+Risk netting,Risk netting,Risk/management concept,Risk/Other,risk_metrics,value_date,date
+Sleeve netting,Sleeve netting,Portfolio construction concept or control,Portfolio Construction,trades,trade_ts,timestamp
+Overlay netting,Overlay netting,Portfolio construction concept or control,Portfolio Construction,portfolios,strategy_code,text
+TE constraint,Tracking error constraint,Portfolio construction concept or control,Portfolio Construction,risk_metrics,metric_value,numeric
+TE contribution,Tracking error contribution,Risk/management concept,Risk/Other,trades,trade_id,bigint
+IR target,Information ratio target,Portfolio construction concept or control,Portfolio Construction,portfolios,portfolio_id,bigint
+Vol budget,Vol budget,Portfolio construction concept or control,Portfolio Construction,risk_metrics,metric_id,bigint
+Risk cap,Risk cap,Risk/management concept,Risk/Other,trades,term_code,text
+Risk floor,Risk floor,Risk/management concept,Risk/Other,portfolios,term_code,text
+Band breach,Band breach,Portfolio construction concept or control,Portfolio Construction,risk_metrics,term_code,text
+Drift threshold,Drift threshold,Risk/management concept,Risk/Other,trades,counterparty_id,integer
+Cash sweep,Cash sweep,Risk/management concept,Risk/Other,portfolios,weight,numeric
+De minimis rule,De minimis rule,Risk/management concept,Risk/Other,risk_metrics,greek,text
+Wash sale check,Wash sale check,Risk/management concept,Risk/Other,trades,notional,numeric
+Lot selection,Lot selection,Execution microstructure term,Execution/Market Micro,portfolios,rebalance_date,date
+HIFO,"Highest-in, first-out",Risk/management concept,Risk/Other,risk_metrics,value_date,date
+LIFO,"Last-in, first-out",Risk/management concept,Risk/Other,trades,trade_ts,timestamp
+Tax lot,Tax lot,Execution microstructure term,Execution/Market Micro,portfolios,strategy_code,text
+Tax budget,Tax budget,Portfolio construction concept or control,Portfolio Construction,risk_metrics,metric_value,numeric
+After-tax alpha,After-tax alpha,Portfolio construction concept or control,Portfolio Construction,trades,trade_id,bigint
+Gross alpha,Gross alpha,Portfolio construction concept or control,Portfolio Construction,portfolios,portfolio_id,bigint
+Net alpha,Net alpha,Portfolio construction concept or control,Portfolio Construction,risk_metrics,metric_id,bigint
+Pre-cost alpha,Pre-cost alpha,Portfolio construction concept or control,Portfolio Construction,trades,term_code,text
+Slippage budget,Slippage budget,Portfolio construction concept or control,Portfolio Construction,portfolios,term_code,text
+Impact cost,Impact cost,Risk/management concept,Risk/Other,risk_metrics,term_code,text
+Commission drag,Commission drag,Risk/management concept,Risk/Other,trades,counterparty_id,integer
+Capacity limit,Capacity limit,Risk/management concept,Risk/Other,portfolios,weight,numeric
+Realized TE,Realized tracking error,Performance/risk metric,Portfolio Metrics,risk_metrics,greek,text
+Ex-ante TE,Ex-ante tracking error,Performance/risk metric,Portfolio Metrics,trades,notional,numeric
+Ex-post TE,Ex-post tracking error,Performance/risk metric,Portfolio Metrics,portfolios,rebalance_date,date
+TE decomposition,TE decomposition,Risk/management concept,Risk/Other,risk_metrics,value_date,date
+VaR budget,VaR budget,Portfolio construction concept or control,Portfolio Construction,trades,trade_ts,timestamp
+ES budget,Expected shortfall budget,Portfolio construction concept or control,Portfolio Construction,portfolios,strategy_code,text
+Shortfall risk,Shortfall risk,Risk/management concept,Risk/Other,risk_metrics,metric_value,numeric
+CVaR,Conditional Value at Risk,Risk/management concept,Risk/Other,trades,trade_id,bigint
+Expected shortfall,Expected shortfall,Risk/management concept,Risk/Other,portfolios,portfolio_id,bigint
+Omega ratio,Omega ratio,Performance/risk metric,Portfolio Metrics,risk_metrics,metric_id,bigint
+Sortino ratio,Sortino ratio,Performance/risk metric,Portfolio Metrics,trades,term_code,text
+Upside capture,Upside capture,Risk/management concept,Risk/Other,portfolios,term_code,text
+Downside capture,Downside capture,Risk/management concept,Risk/Other,risk_metrics,term_code,text
+Hit ratio (PC),Hit ratio (PC),Performance/risk metric,Portfolio Metrics,trades,counterparty_id,integer
+Batting average,Batting average,Risk/management concept,Risk/Other,portfolios,weight,numeric
+Win-loss ratio,Win-loss ratio,Performance/risk metric,Portfolio Metrics,risk_metrics,greek,text
+Payoff ratio,Payoff ratio,Performance/risk metric,Portfolio Metrics,trades,notional,numeric
+Pain ratio,Pain ratio,Performance/risk metric,Portfolio Metrics,portfolios,rebalance_date,date
+Ulcer index,Ulcer index,Risk/management concept,Risk/Other,risk_metrics,value_date,date
+MAR ratio,MAR ratio,Performance/risk metric,Portfolio Metrics,trades,trade_ts,timestamp
+Sterling ratio,Sterling ratio,Performance/risk metric,Portfolio Metrics,portfolios,strategy_code,text
+M2 measure,Modigliani–Modigliani measure,Performance/risk metric,Portfolio Metrics,risk_metrics,metric_value,numeric
+Appraisal ratio,Appraisal ratio,Performance/risk metric,Portfolio Metrics,trades,trade_id,bigint
+Treynor ratio,Treynor ratio,Performance/risk metric,Portfolio Metrics,portfolios,portfolio_id,bigint
+Beta crowding,Beta crowding,Risk/management concept,Risk/Other,risk_metrics,metric_id,bigint
+Factor neutrality,Factor neutrality,Portfolio construction concept or control,Portfolio Construction,trades,term_code,text
+Sector neutrality,Sector neutrality,Portfolio construction concept or control,Portfolio Construction,portfolios,term_code,text
+Country neutrality,Country neutrality,Portfolio construction concept or control,Portfolio Construction,risk_metrics,term_code,text
+ESG tilt,ESG tilt,Portfolio construction concept or control,Portfolio Construction,trades,counterparty_id,integer
+Carbon budget,Carbon budget,Portfolio construction concept or control,Portfolio Construction,portfolios,weight,numeric
+Temperature alignment,Temperature alignment,Risk/management concept,Risk/Other,risk_metrics,greek,text
+Green revenue,Green revenue,Execution microstructure term,Execution/Market Micro,trades,notional,numeric
+Brown revenue,Brown revenue,Execution microstructure term,Execution/Market Micro,portfolios,rebalance_date,date
+Scope 1 intensity,Scope 1 intensity,Risk/management concept,Risk/Other,risk_metrics,value_date,date
+Scope 2 intensity,Scope 2 intensity,Risk/management concept,Risk/Other,trades,trade_ts,timestamp
+Scope 3 intensity,Scope 3 intensity,Risk/management concept,Risk/Other,portfolios,strategy_code,text
+Net zero pathway,Net zero pathway,Risk/management concept,Risk/Other,risk_metrics,metric_value,numeric
+Engagement overlay,Engagement overlay,Portfolio construction concept or control,Portfolio Construction,trades,trade_id,bigint
+Negative screening,Negative screening,Risk/management concept,Risk/Other,portfolios,portfolio_id,bigint
+Best-in-class,Best-in-class,Risk/management concept,Risk/Other,risk_metrics,metric_id,bigint
+Tilting,Tilting,Portfolio construction concept or control,Portfolio Construction,trades,term_code,text
+Thematic sleeve,Thematic sleeve,Portfolio construction concept or control,Portfolio Construction,portfolios,term_code,text
+Impact sleeve,Impact sleeve,Portfolio construction concept or control,Portfolio Construction,risk_metrics,term_code,text
+SDG mapping,SDG mapping,Risk/management concept,Risk/Other,trades,counterparty_id,integer
+Liquidity ladder,Liquidity ladder,Risk/management concept,Risk/Other,portfolios,weight,numeric
+Cash buffer,Cash buffer,Risk/management concept,Risk/Other,risk_metrics,greek,text
+Settlement buffer,Settlement buffer,Risk/management concept,Risk/Other,trades,notional,numeric
+Overlay cash,Overlay cash,Portfolio construction concept or control,Portfolio Construction,portfolios,rebalance_date,date
+Synthetic exposure,Synthetic exposure,Risk/management concept,Risk/Other,risk_metrics,value_date,date
+Proxy hedge,Proxy hedge,Risk/management concept,Risk/Other,trades,trade_ts,timestamp
+Proxy beta,Proxy beta,Risk/management concept,Risk/Other,portfolios,strategy_code,text
+Beta overlay,Beta overlay,Portfolio construction concept or control,Portfolio Construction,risk_metrics,metric_value,numeric
+Overlay delta,Overlay delta,Portfolio construction concept or control,Portfolio Construction,trades,trade_id,bigint
+Overlay gamma,Overlay gamma,Portfolio construction concept or control,Portfolio Construction,portfolios,portfolio_id,bigint
+Rebalance cadence,Rebalance cadence,Portfolio construction concept or control,Portfolio Construction,risk_metrics,metric_id,bigint
+Staggered rebalance,Staggered rebalance,Portfolio construction concept or control,Portfolio Construction,trades,term_code,text
+Calendar rebalance,Calendar rebalance,Portfolio construction concept or control,Portfolio Construction,portfolios,term_code,text
+Tolerance band,Tolerance band,Portfolio construction concept or control,Portfolio Construction,risk_metrics,term_code,text
+Adaptive bands,Adaptive bands,Portfolio construction concept or control,Portfolio Construction,trades,counterparty_id,integer
+Event-driven rebalance,Event-driven rebalance,Portfolio construction concept or control,Portfolio Construction,portfolios,weight,numeric
+Shock absorber,Shock absorber,Risk/management concept,Risk/Other,risk_metrics,greek,text
+Vol control,Vol control,Advanced options/vol concept,Options & Vol,trades,notional,numeric
+Risk control,Risk control,Portfolio construction concept or control,Portfolio Construction,portfolios,rebalance_date,date
+Drawdown control,Drawdown control,Risk/management concept,Risk/Other,risk_metrics,value_date,date
+Circuit breaker (PC),Circuit breaker (PC),Risk/management concept,Risk/Other,trades,trade_ts,timestamp
+De-lever switch,De-lever switch,Risk/management concept,Risk/Other,portfolios,strategy_code,text
+Re-lever switch,Re-lever switch,Risk/management concept,Risk/Other,risk_metrics,metric_value,numeric
+Notional scaling,Notional scaling,Risk/management concept,Risk/Other,trades,trade_id,bigint
+Target notional,Target notional,Portfolio construction concept or control,Portfolio Construction,portfolios,portfolio_id,bigint
+Target risk,Target risk,Portfolio construction concept or control,Portfolio Construction,risk_metrics,metric_id,bigint
+Risk-on overlay,Risk-on overlay,Portfolio construction concept or control,Portfolio Construction,trades,term_code,text
+Risk-off overlay,Risk-off overlay,Portfolio construction concept or control,Portfolio Construction,portfolios,term_code,text
+Cushion,Cushion,Risk/management concept,Risk/Other,risk_metrics,term_code,text
+Merton line,Merton line,Risk/management concept,Risk/Other,trades,counterparty_id,integer
+Floor value,Floor value,Risk/management concept,Risk/Other,portfolios,weight,numeric
+Cushion ratio,Cushion ratio,Performance/risk metric,Portfolio Metrics,risk_metrics,greek,text
+CPPI,Constant Proportion Portfolio Insurance,Portfolio construction concept or control,Portfolio Construction,trades,notional,numeric
+OBPI,Option-Based Portfolio Insurance,Portfolio construction concept or control,Portfolio Construction,portfolios,rebalance_date,date
+LHP,Liability-hedging portfolio,Portfolio construction concept or control,Portfolio Construction,risk_metrics,value_date,date
+ALM hedge,ALM hedge,Portfolio construction concept or control,Portfolio Construction,trades,trade_ts,timestamp
+Roll yield capture,Roll yield capture,Risk/management concept,Risk/Other,portfolios,strategy_code,text
+Carry sleeve,Carry sleeve,Portfolio construction concept or control,Portfolio Construction,risk_metrics,metric_value,numeric
+Basis sleeve,Basis sleeve,Portfolio construction concept or control,Portfolio Construction,trades,trade_id,bigint
+Term-structure tilt,Term-structure tilt,Portfolio construction concept or control,Portfolio Construction,portfolios,portfolio_id,bigint
+Curve carry,Curve carry,Risk/management concept,Risk/Other,risk_metrics,metric_id,bigint
+Cross-gamma hedge,Cross-gamma hedge,Advanced options/vol concept,Options & Vol,trades,term_code,text
+Sticky gamma,Sticky gamma,Advanced options/vol concept,Options & Vol,portfolios,term_code,text
+Gamma scalping,Gamma scalping,Advanced options/vol concept,Options & Vol,risk_metrics,term_code,text
+Vanna,Vanna,Advanced options/vol concept,Options & Vol,trades,counterparty_id,integer
+Volga,Volga,Advanced options/vol concept,Options & Vol,portfolios,weight,numeric
+Charm,Charm,Advanced options/vol concept,Options & Vol,risk_metrics,greek,text
+Color,Color,Advanced options/vol concept,Options & Vol,trades,notional,numeric
+Speed,Speed,Advanced options/vol concept,Options & Vol,portfolios,rebalance_date,date
+Zomma,Zomma,Advanced options/vol concept,Options & Vol,risk_metrics,value_date,date
+Derman-Kani,Derman-Kani,Risk/management concept,Risk/Other,trades,trade_ts,timestamp
+Heston model,Heston model,Advanced options/vol concept,Options & Vol,portfolios,strategy_code,text
+SABR,SABR,Advanced options/vol concept,Options & Vol,risk_metrics,metric_value,numeric
+Local vol,Local vol,Advanced options/vol concept,Options & Vol,trades,trade_id,bigint
+Stochastic vol,Stochastic vol,Advanced options/vol concept,Options & Vol,portfolios,portfolio_id,bigint
+Regime switch,Regime switch,Risk/management concept,Risk/Other,risk_metrics,metric_id,bigint
+Jump diffusion,Jump diffusion,Advanced options/vol concept,Options & Vol,trades,term_code,text
+Quanto adjustment,Quanto adjustment,Advanced options/vol concept,Options & Vol,portfolios,term_code,text
+Convexity correction,Convexity correction,Advanced options/vol concept,Options & Vol,risk_metrics,term_code,text
+TCA,Transaction Cost Analysis,Execution microstructure term,Execution/Market Micro,trades,counterparty_id,integer
+Slippage audit,Slippage audit,Execution microstructure term,Execution/Market Micro,portfolios,weight,numeric
+Venue analysis,Venue analysis,Execution microstructure term,Execution/Market Micro,risk_metrics,greek,text
+T-CA bench,T-CA bench,Risk/management concept,Risk/Other,trades,notional,numeric
+IS analysis,Implementation shortfall analysis,Risk/management concept,Risk/Other,portfolios,rebalance_date,date
+Arrival price,Arrival price,Risk/management concept,Risk/Other,risk_metrics,value_date,date
+Implementation shortfall,Implementation shortfall,Risk/management concept,Risk/Other,trades,trade_ts,timestamp
+Parent order,Parent order,Execution microstructure term,Execution/Market Micro,portfolios,strategy_code,text
+Child order,Child order,Execution microstructure term,Execution/Market Micro,risk_metrics,metric_value,numeric
+Slice size,Slice size,Risk/management concept,Risk/Other,trades,trade_id,bigint
+Passive fill,Passive fill,Risk/management concept,Risk/Other,portfolios,portfolio_id,bigint
+Aggressive fill,Aggressive fill,Risk/management concept,Risk/Other,risk_metrics,metric_id,bigint
+Queue position,Queue position,Execution microstructure term,Execution/Market Micro,trades,term_code,text
+Order imbalance,Order imbalance,Execution microstructure term,Execution/Market Micro,portfolios,term_code,text

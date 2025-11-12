@@ -1,0 +1,3 @@
+[submodule "Llama-3.2-1B"]
+	path = Llama-3.2-1B
+	url = https://huggingface.co/mina1ilieva/Llama-3.2-1B-finetuned
