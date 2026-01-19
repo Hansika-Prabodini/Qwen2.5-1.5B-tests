@@ -187,12 +187,23 @@ def extract_json_from_generation(text: str) -> Optional[str]:
     text = text.replace("<|start_header_id|>", "").strip()
     text = text.replace("<|end_header_id|>", "").strip()
     
-    # Try to find JSON object in the text
-    # Look for content between { and }
-    json_match = re.search(r'\{.*\}', text, re.DOTALL)
-    if json_match:
-        return json_match.group(0)
+    # Find the first '{' character
+    start_idx = text.find('{')
+    if start_idx == -1:
+        return None
     
+    # Count braces to find the matching closing brace
+    brace_count = 0
+    for i in range(start_idx, len(text)):
+        if text[i] == '{':
+            brace_count += 1
+        elif text[i] == '}':
+            brace_count -= 1
+            if brace_count == 0:
+                # Found the matching closing brace
+                return text[start_idx:i+1]
+    
+    # No matching closing brace found
     return None
 
 
